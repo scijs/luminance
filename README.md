@@ -17,7 +17,7 @@ require("save-pixels")(grayscale_lena, "png").pipe(process.stdout)
 
 Which creates the following image:
 
-<img src="examples/lena.png">
+<img src="https://raw.github.com/mikolalysenko/luminance/master/examples/lena.png">
 
 ## Install
 
