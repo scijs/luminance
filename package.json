@@ -1,0 +1,42 @@
+{
+  "name": "luminance",
+  "version": "0.0.0",
+  "description": "Convert RGB to grayscale",
+  "main": "lum.js",
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikolalysenko/luminance.git"
+  },
+  "keywords": [
+    "luminance",
+    "grayscale",
+    "ndarray",
+    "convert",
+    "rgb",
+    "red",
+    "green",
+    "blue",
+    "color",
+    "black",
+    "and",
+    "white",
+    "intensity",
+    "image"
+  ],
+  "author": "Mikola Lysenko",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "4985e0ea653ac860746c56aaf73f8a1977b38526",
+  "dependencies": {
+    "cwise": "~0.1.2",
+    "ndarray": "~0.2.1"
+  },
+  "devDependencies": {
+    "tap": "~0.4.2",
+    "lena": "0.0.0",
+    "save-pixels": "0.0.1"
+  }
+}
