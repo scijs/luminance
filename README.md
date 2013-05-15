@@ -1,6 +1,6 @@
 luminance
 =========
-Converts an RGB image into a [grayscale luminance](http://en.wikipedia.org/wiki/Grayscale) image.
+Converts an RGB image into a [grayscale luminance](http://en.wikipedia.org/wiki/Grayscale) image.  This is built on the [ndarray library](https://github.com/mikolalysenko/ndarray).
 
 ## Example
 
