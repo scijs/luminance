@@ -1,6 +1,6 @@
 {
   "name": "luminance",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Convert RGB to grayscale",
   "main": "lum.js",
   "scripts": {
@@ -31,12 +31,12 @@
   "readmeFilename": "README.md",
   "gitHead": "4985e0ea653ac860746c56aaf73f8a1977b38526",
   "dependencies": {
-    "cwise": "~0.1.2",
-    "ndarray": "~0.2.1"
+    "cwise": "~0.3.2",
+    "ndarray": "~1.0.0"
   },
   "devDependencies": {
     "tap": "~0.4.2",
-    "lena": "0.0.0",
-    "save-pixels": "0.0.1"
+    "lena": "~1.0.0",
+    "save-pixels": "~0.2.0"
   }
 }

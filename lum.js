@@ -5,7 +5,7 @@ var cwise = require("cwise")
 
 var computeLuminance =  cwise({
   args: ["array", "array", "array", "array"],
-  body: function(out, r, g, b) {
+  body: function luminance(out, r, g, b) {
     out = 0.299 * r + 0.587 * g + 0.114 * b
   }
 })
@@ -15,7 +15,7 @@ module.exports = function luminance(a, b, c, d) {
     case 1:
       var lum_shape = a.shape.slice(0)
       lum_shape.pop()
-      var result = ndarray.zeros(lum_shape)
+      var result = ndarray(new Float32Array(a.size), lum_shape)
       computeLuminance(result, a.pick(-1, -1, 0), a.pick(-1, -1, 1), a.pick(-1, -1, 2))
       return result
     case 2:
