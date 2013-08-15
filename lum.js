@@ -16,10 +16,10 @@ module.exports = function luminance(a, b, c, d) {
       var lum_shape = a.shape.slice(0)
       lum_shape.pop()
       var result = ndarray(new Float32Array(a.size), lum_shape)
-      computeLuminance(result, a.pick(-1, -1, 0), a.pick(-1, -1, 1), a.pick(-1, -1, 2))
+      computeLuminance(result, a.pick(undefined, undefined, 0), a.pick(undefined, undefined, 1), a.pick(undefined, undefined, 2))
       return result
     case 2:
-      computeLuminance(a, b.pick(-1, -1, 0), b.pick(-1, -1, 1), b.pick(-1, -1, 2))
+      computeLuminance(a, b.pick(undefined, undefined, 0), b.pick(undefined, undefined, 1), b.pick(undefined, undefined, 2))
       return a
     case 3:
       var lum_shape = a.shape.slice(0)
