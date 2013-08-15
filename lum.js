@@ -23,8 +23,7 @@ module.exports = function luminance(a, b, c, d) {
       return a
     case 3:
       var lum_shape = a.shape.slice(0)
-      lum_shape.pop()
-      var result = ndarray.zeros(lum_shape)
+      var result = ndarray(new Float32Array(a.size), lum_shape)
       computeLuminance(result, a, b, c)
       return result
     case 4:
