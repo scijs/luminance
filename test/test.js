@@ -2,7 +2,7 @@
 
 var luminance = require("../lum.js")
 
-require("tap").test("luminance", function(t) {
+require("tape")("luminance", function(t) {
 
 
   t.end()
